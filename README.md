@@ -5,7 +5,7 @@ This application uses Spring Boot, AngularJS with Material Design and an H2 file
 
 You will need to have Java 1.8 and Maven installed before beginning (Note: ensure that you are using Java 1.8 and not 1.9).
 
-Open the project through command line or in an IDE of your choice.
+Open the project through command line or in an IDE of your choice (Spring Tool Suite or IntelliJ will work best).
 
 The application uses Maven and the front-end Maven plugin to build both the back-end and front-end.
 Run the following commands
