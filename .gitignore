@@ -1,0 +1,10 @@
+node/
+node_modules/
+public/bower_components/
+public/styles/css
+.idea/
+dist/
+.sass-cache/
+.settings/
+etc/
+target/

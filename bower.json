@@ -1,0 +1,18 @@
+{
+  "name": "groceryList",
+  "version": "0.1.0",
+  "dependencies": {
+    "angular": "~1.6.0",
+    "angular-cookies": "~1.6.0",
+    "angular-resource": "~1.6.0",
+    "angular-sanitize": "~1.6.0",
+    "angular-ui-router": "^1.0.11",
+    "lodash": "^4.17.4",
+    "bootstrap": "^3.3.7",
+    "angular-material": "^1.1.5"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.6.0",
+    "angular-scenario": "~1.6.0"
+  }
+}

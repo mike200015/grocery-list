@@ -1,0 +1,16 @@
+<div layout="row" layout-xs="column">
+  <div flex>
+    <h4>Add New Item</h4>
+    <form ng-submit="addGroceryItemForm.$valid && addGroceryItemVm.addItem()" name="addGroceryItemForm" novalidate>
+      <md-input-container class="md-block">
+        <input ng-model="groceryItem.title" type="text" placeholder="Title" ng-required="true" name="title">
+      </md-input-container>
+
+      <md-input-container class="md-block">
+        <textarea ng-model="groceryItem.notes" md-maxlength="addGroceryItemVm.maxLength" rows="5" placeholder="Notes" name="notes"></textarea>
+      </md-input-container>
+
+      <md-button type="submit" class="md-raised md-accent" ng-disabled="!addGroceryItemForm.$valid">Add</md-button>
+    </form>
+  </div>
+</div>

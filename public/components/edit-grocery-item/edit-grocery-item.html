@@ -1,0 +1,17 @@
+<div layout="row" layout-xs="column">
+  <div flex>
+    <h4>Edit Item</h4>
+    <form ng-submit="editGroceryItemForm.$valid && editGroceryItemVm.editItem(editGroceryItemVm.groceryItem)" name="editGroceryItemForm" novalidate>
+      <md-input-container class="md-block">
+        <input ng-model="editGroceryItemVm.groceryItem.title" type="text" placeholder="Title" ng-required="true" name="title">
+      </md-input-container>
+
+      <md-input-container class="md-block">
+        <textarea ng-model="editGroceryItemVm.groceryItem.notes" md-maxlength="addGroceryItemVm.maxLength" rows="5" placeholder="Notes" name="notes"></textarea>
+      </md-input-container>
+
+      <md-button type="submit" class="md-raised md-accent" ng-disabled="!editGroceryItemForm.$valid">Edit</md-button>
+      <md-button class="md-warn" ng-click="editGroceryItemVm.deleteItem(editGroceryItemVm.groceryItem, $event)">Delete</md-button>
+    </form>
+  </div>
+</div>

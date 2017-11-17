@@ -1,0 +1,12 @@
+<div class="container">
+<h4>Grocery List</h4>
+<div ng-repeat="groceryItem in homeVm.groceryList" class="row">
+  <md-checkbox ng-checked="groceryItem.status === 'COMPLETED'" ng-click="homeVm.toggleStatus(groceryItem)">
+    {{ groceryItem.title }}
+  </md-checkbox>
+  <md-button ng-click="homeVm.editGroceryItem(groceryItem)">View / Edit</md-button>
+  <edit-grocery-item ng-if="homeVm.isGroceryItemToEdit(groceryItem)" grocery-item="homeVm.groceryItemToEdit"></edit-grocery-item>
+</div>
+
+  <add-grocery-item></add-grocery-item>
+</div>
