@@ -8,8 +8,7 @@ You will need to have Java 1.8 and Maven installed before beginning (Note: ensur
 Open the project through command line or in an IDE of your choice (Spring Tool Suite or IntelliJ will work best).
 
 The application uses Maven and the front-end Maven plugin to build both the back-end and front-end.
-Run the following commands
-cmd:
+Run the following commands:
 ```
 mvn clean install
 ```
